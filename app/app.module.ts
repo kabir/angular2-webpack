@@ -8,6 +8,7 @@ import {AppHeaderService} from "./services/appHeaderService";
 import {ProgressErrorService} from "./services/progressErrorService";
 import {DbExplorerComponent} from "./components/dbexplorer/dbexplorer";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {ConfigComponent} from "./components/config/config";
 @NgModule({
     imports: [
         BrowserModule,
@@ -19,6 +20,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     declarations: [
         AccessLogViewComponent,
         AppComponent,
+        ConfigComponent,
         DbExplorerComponent
     ],
     bootstrap: [ AppComponent ],
