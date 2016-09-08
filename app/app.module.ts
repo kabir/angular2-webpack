@@ -10,6 +10,15 @@ import {DbExplorerComponent} from "./components/dbexplorer/dbexplorer";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {ConfigComponent} from "./components/config/config";
 import {BoardsComponent} from "./components/boards/boards";
+import {BoardComponent} from "./components/board/board";
+import {ControlPanelComponent} from "./components/board/controlPanel/controlPanel";
+import {SwimlaneEntryComponent} from "./components/board/swimlaneEntry/swimlaneEntry";
+import {RankViewComponent} from "./components/board/view/rank/rankview";
+import {PanelMenuComponent} from "./components/board/panelMenu/panelMenu";
+import {KanbanViewComponent} from "./components/board/view/kanban/kanbanview";
+import {IssueContextMenuComponent} from "./components/board/issueContextMenu/issueContextMenu";
+import {IssueComponent} from "./components/board/issue/issue";
+import {HealthPanelComponent} from "./components/board/healthPanel/healthPanel";
 @NgModule({
     imports: [
         BrowserModule,
@@ -21,9 +30,18 @@ import {BoardsComponent} from "./components/boards/boards";
     declarations: [
         AccessLogViewComponent,
         AppComponent,
+        BoardComponent,
         BoardsComponent,
+        ControlPanelComponent,
         ConfigComponent,
-        DbExplorerComponent
+        DbExplorerComponent,
+        HealthPanelComponent,
+        IssueComponent,
+        IssueContextMenuComponent,
+        KanbanViewComponent,
+        PanelMenuComponent,
+        RankViewComponent,
+        SwimlaneEntryComponent
     ],
     bootstrap: [ AppComponent ],
     providers: [
