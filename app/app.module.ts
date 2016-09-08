@@ -6,15 +6,20 @@ import {HttpModule} from "@angular/http";
 import {AccessLogViewComponent} from "./components/access/accessLogView";
 import {AppHeaderService} from "./services/appHeaderService";
 import {ProgressErrorService} from "./services/progressErrorService";
+import {DbExplorerComponent} from "./components/dbexplorer/dbexplorer";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 @NgModule({
     imports: [
         BrowserModule,
+        FormsModule,
         HttpModule,
+        ReactiveFormsModule,
         ROUTING
     ],
     declarations: [
         AccessLogViewComponent,
-        AppComponent
+        AppComponent,
+        DbExplorerComponent
     ],
     bootstrap: [ AppComponent ],
     providers: [
