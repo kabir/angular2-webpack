@@ -9,6 +9,7 @@ import {ProgressErrorService} from "./services/progressErrorService";
 import {DbExplorerComponent} from "./components/dbexplorer/dbexplorer";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {ConfigComponent} from "./components/config/config";
+import {BoardsComponent} from "./components/boards/boards";
 @NgModule({
     imports: [
         BrowserModule,
@@ -20,6 +21,7 @@ import {ConfigComponent} from "./components/config/config";
     declarations: [
         AccessLogViewComponent,
         AppComponent,
+        BoardsComponent,
         ConfigComponent,
         DbExplorerComponent
     ],
