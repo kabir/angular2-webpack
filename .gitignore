@@ -4,6 +4,6 @@ jirban-jira.iml
 .idea
 target
 node_modules
-src/main/resources/webapp/app/**/*.js
-src/main/resources/webapp/app/**/*.js.map
+src/**/*.js
+src/**/*.js.map
 npm-debug.log
