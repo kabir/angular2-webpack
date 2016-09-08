@@ -7,3 +7,4 @@ node_modules
 src/**/*.js
 src/**/*.js.map
 npm-debug.log
+_tsOut
