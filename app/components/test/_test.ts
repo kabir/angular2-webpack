@@ -2,6 +2,7 @@ import {Component} from "@angular/core";
 import {BoardsService} from "../../services/boardsService";
 import {ProgressErrorService} from "../../services/progressErrorService";
 import {AppHeaderService} from "../../services/appHeaderService";
+import {_TestBase} from "./testSuper";
 
 @Component({
     selector: 'test',
@@ -9,11 +10,11 @@ import {AppHeaderService} from "../../services/appHeaderService";
     templateUrl: './_test.html',
     styleUrls: ['./_test.css']
 })
-export class _TestComponent {
+export class _TestComponent extends _TestBase {
     private boards:any[];
 
-    bgColour:string = "blue";
     constructor(private _boardsService:BoardsService, progressError:ProgressErrorService, appHeaderService:AppHeaderService) {
+        super();
         appHeaderService.setTitle("List of boards");
         progressError.startProgress(true);
         _boardsService.loadBoardsList(true).subscribe(
@@ -27,15 +28,5 @@ export class _TestComponent {
             () => {
                 progressError.finishProgress();
             });
-    }
-
-    onClickChangeColour(event:MouseEvent) {
-        if (this.bgColour === 'blue') {
-            this.bgColour = "red";
-        } else if (this.bgColour === "red") {
-            this.bgColour = "green";
-        } else {
-            this.bgColour = "blue";
-        }
     }
 }
