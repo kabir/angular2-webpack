@@ -19,6 +19,7 @@ import {KanbanViewComponent} from "./components/board/view/kanban/kanbanview";
 import {IssueContextMenuComponent} from "./components/board/issueContextMenu/issueContextMenu";
 import {IssueComponent} from "./components/board/issue/issue";
 import {HealthPanelComponent} from "./components/board/healthPanel/healthPanel";
+import {_TestComponent} from "./components/test/_test";
 @NgModule({
     imports: [
         BrowserModule,
@@ -41,7 +42,8 @@ import {HealthPanelComponent} from "./components/board/healthPanel/healthPanel";
         KanbanViewComponent,
         PanelMenuComponent,
         RankViewComponent,
-        SwimlaneEntryComponent
+        SwimlaneEntryComponent,
+        _TestComponent
     ],
     bootstrap: [ AppComponent ],
     providers: [
